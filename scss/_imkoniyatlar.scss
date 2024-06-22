@@ -1,0 +1,95 @@
+.imkoniyatlar{
+    margin-top: 60px;
+    border-top: 2px solid #cccccc;
+    padding: 15px 0px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    &__left{
+        height: auto;
+    }
+    &__title{
+        font-size: 28px;
+        color: #2E3038;
+        font-family: "font2";
+        line-height: 35px;
+    }
+    &__right{
+        height:auto;
+    }
+    &__cards{
+        width: 100%;
+        margin: 80px 0px 0px 0px;
+        height: auto;
+        display: grid;
+        gap: 20px;
+    }
+    &__card{
+        border-bottom: 2px solid #cccccc;
+        &__desc{
+            font-size: 12px;
+            font-family: "font1";
+            color: #2E303899;
+            padding: 15px 0px;
+        }
+    }
+}
+@media(min-width:576px){
+    .imkoniyatlar{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 50px;
+        &__title{
+            width: 333px;
+            font-size: 30px;
+        }
+        &__cards{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+        }
+    }
+}
+@media(min-width:992px){
+    .imkoniyatlar{
+        display: grid;
+       gap: 80px;
+        &__title{
+            width: 333px;
+            font-size: 34px;
+            line-height: 45px;
+        }
+      
+        &__card{
+            &__title{
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+    }
+}
+@media(min-width:992px){
+    .imkoniyatlar{
+        display: grid;
+       gap: 200px;
+        
+        &__title{
+            width: 403px;
+            font-size: 40px;
+            line-height: 52px;
+        }
+        &__cards{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 100px;
+        }
+        &__card{
+            padding: 0px 40px 0px 0px;
+            &__title{
+                font-size: 16px;
+                line-height: 24px;
+               
+            }
+        }
+    }
+}

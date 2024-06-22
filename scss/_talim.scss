@@ -1,0 +1,98 @@
+.talim{
+    border-top: 2px solid #cccccc;
+    margin-top: 60px;
+    padding: 15px 0px 0px 0px;
+    &__about{
+        width: 100%;
+        display: grid;
+        gap: 30px;
+    }
+    &__title{
+        font-size: 26px;
+        color: #2E3038;
+        font-family: "font2";
+    }
+    &__cards{
+        margin: 50px 0px 0px 0px;
+        width: 100%;
+        height: auto;
+        display: grid;
+        gap: 20px;
+    }
+    &__card{
+        padding: 30px;
+        border-radius: 12px;
+        width: 100%;
+        height:auto;
+        border: 2px solid #cccccc;
+       &__title{
+        font-size: 16px;
+        color: #2E3038;
+        font-family: "font1";
+       }
+       &__desc{
+        font-family: "font2";
+        font-size: 12px;
+        color: #2E3038;
+       }
+    }
+    &__img-2{
+        margin:20px 0px;
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        img{
+            width: 80%;
+        }
+    }
+
+}
+@media (min-width:576px){
+    .talim{
+    &__card{
+        &__title{
+            font-size: 20px;
+        }
+        &__desc{
+            font-size: 14px;
+            padding: 15px 0px;
+        }
+    }
+}
+}
+@media (min-width:768px){
+    .talim{
+        &__title{
+            font-size: 34px;
+        }
+        &__cards{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
+@media (min-width:1200px){
+    .talim{
+        margin-top: 120px;
+        &__title{
+            font-size: 38px;
+        }
+        &__cards{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+}
+@media (min-width:1400px){
+    .talim{
+        &__title{
+            font-size: 40px;
+        }
+        &__card{
+            &__desc{
+                font-size: 16px;
+            }
+        }
+    }
+}

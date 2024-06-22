@@ -1,0 +1,118 @@
+.xalqaro{
+    height: auto;
+    margin-top: 60px;
+    border-top: 2px solid #cccccc;
+    padding: 15px 0px;
+    display: grid;
+    gap: 50px;
+    &__top{
+        display: grid;
+        gap: 25px;
+        &__title{
+            font-size: 24px;
+            font-family: "font2";
+            line-height: 35px;
+        }
+    }
+
+    &__bottom{
+        width: 100%;
+        height: auto;
+        display: grid;
+        gap: 20px;
+        &__left{
+            width: 100%;
+            height: auto;
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+        &__right{
+            width: 100%;
+            height: auto;
+
+        }
+        &__cards{
+            display: grid;
+            width: 100%;
+            gap: 30px;
+        }
+        &__card{
+            height: auto;
+            display: grid;
+            gap: 50px;
+            padding: 20px;
+            border: 1px solid #cccccc;
+            border-radius: 10px;
+            &__title{
+                font-size: 12px;
+                color: #56585E;
+                font-family: "font1";
+            }
+           
+        }
+        &__btn{
+            width: 120px;
+            border-radius: 20px;
+            border: 1px solid #cccccc;
+            display: flex;  
+            padding: 8px 25px; 
+            align-items: center;
+            gap: 10px;
+            transition: 0.3s;
+            font-size: 12px;
+            color: #184AFB;
+            &:hover{
+                transform: scale(1.1);
+                box-shadow: 5px 5px 10px gray;
+            }
+        }
+    }
+}
+@media (min-width:576px){
+    .xalqaro{
+        &__top{
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 120px;
+        }
+       
+        &__bottom{
+            display: grid;
+            grid-template-columns: 68% 30%;
+            &__left{
+                img{
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            &__cards{
+                height: 100%;
+                display: grid;
+                grid-template-rows: 1fr 1fr;
+            }
+            
+        }
+    }
+    
+}
+@media (min-width:992px){
+    .xalqaro{
+        &__top__title{
+            width: 70%;
+            font-size: 34px;
+            line-height: 45px;
+        }
+    }
+    
+}
+@media (min-width:1200px){
+    .xalqaro{
+        &__top{
+            display: grid;
+            gap: 180px;
+        }
+    }
+    
+}

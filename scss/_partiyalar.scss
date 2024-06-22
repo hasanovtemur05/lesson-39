@@ -1,0 +1,88 @@
+.partiyalar{
+    height: auto;
+    margin-top: 60px;
+    display: grid;
+    gap: 20px;
+    border-top: 2px solid #cccccc;
+    padding: 15px 0px;
+    &__title{
+        font-size: 28px;
+        color: #2E3038;
+        font-family: "font2";
+    }
+    &__desc{
+        font-size: 12px;
+        color: #828388;
+        font-family: "font2";
+    }
+    &__top{
+        width: 100%;
+        display: grid;
+        gap: 20px;
+    }
+    &__right{
+        display: grid;
+        gap: 20px;
+    }
+    &__bottom{
+        display: grid;
+        gap: 20px;
+    }
+    &__card{
+        width: 100%;
+        display: grid;
+        padding: 60px 0px;
+        justify-content: center;
+        border: 1px solid #cccccc;
+        border-radius: 10px;
+    }
+}
+@media (min-width:576px){
+    .partiyalar{
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 60px;
+    }
+}
+@media (min-width:992px){
+    .partiyalar{
+        display: grid;
+        gap: 80px;
+        margin-top: 100px;
+        &__right{
+            display: grid;
+            gap: 100px;
+        }
+        &__title{
+            font-size: 34px;
+        }
+        &__desc{
+            font-size: 14px;
+        }
+        &__top{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
+@media (min-width:1200px){
+    .partiyalar{
+        display: grid;
+        gap: 140px;
+        &__right{
+            display: grid;
+            gap: 200px;
+        }
+        &__title{
+            font-size: 40px;
+        }
+        &__desc{
+            font-size: 16px;
+        }
+        &__bottom{
+            display: grid;
+            gap: 5px;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+}
